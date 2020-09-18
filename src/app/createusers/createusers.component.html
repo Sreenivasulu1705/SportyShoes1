@@ -1,0 +1,21 @@
+<div>
+    <h3 style="text-decoration: underline; ">Add Users</h3>
+         
+            <table border="1px">
+
+                <tr>
+                        <td><input type="text" [(ngModel)]="users.email" placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                        <td><input type="text" [(ngModel)]="users.password" placeholder="Enter password"></td>
+                </tr>
+                <tr>
+                        <td><input type="text" [(ngModel)]="users.category" placeholder="Enter type"></td>
+                </tr>
+
+    </table>
+
+    <button (click)="createUsers()">Submit</button>
+  
+
+</div>

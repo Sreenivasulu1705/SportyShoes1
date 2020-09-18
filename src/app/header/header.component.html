@@ -1,0 +1,16 @@
+<header>
+    <nav class ="navbar navbar-expand-md navbar-dark bg-dark">
+    
+    <ul class="navbar-nav">
+       
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/createusers" class="nav-link">Create users</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/userslist" class="nav-link" >Users List</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/createproduct" class="nav-link" >Create products</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/productlist" class="nav-link" >Product List</a></li>
+      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link" style="
+        margin-left: -315px;">Login</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Log Out</a></li>
+    
+    </ul>
+      </nav>
+    </header>

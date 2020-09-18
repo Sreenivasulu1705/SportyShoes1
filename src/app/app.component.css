@@ -1,0 +1,25 @@
+div{
+
+    align-content: center;
+}
+.heading{
+    text-decoration:underline;
+    padding:30px;
+}
+
+ul{
+
+    list-style: none;
+
+}
+li{
+    display: inline-block;
+    padding: 40px;
+}
+h3{  
+    text-align: center;   
+    padding: 20px; 
+    color: crimson; 
+    font-size: 32px
+} 
+

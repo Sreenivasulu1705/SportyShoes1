@@ -1,0 +1,52 @@
+
+<div>
+    <h3>Product List</h3>
+<table id="table">
+
+    <tr>
+
+        <th>id</th>
+        <th>name</th>
+        <th>price</th>
+        <th>categoryId</th>
+        
+  
+
+    </tr>
+    
+    <tr *ngFor="let product of product">
+       <td>{{product.id}}</td>
+       <td>{{product.name}}</td>
+       <td>RS {{product.price}}</td>
+       <td>{{product.categoryId}}</td>
+      <button (click)="selectedProduct(product)">Buy</button>
+      
+    </tr>
+     
+  
+   
+   
+</table>
+
+
+</div>
+
+<br/>
+<br/>
+
+<div>
+<table id="table1">
+
+    
+   
+    <tr *ngFor="let product of selectedProduct | keyvalue">
+        <h3>Cart List : </h3>
+        <td>{{product.key}}:{{product.value}}</td>
+     </tr>
+    
+         <td>Total: RS {{selectedProduct.price}}</td>
+
+
+</table>
+
+</div>

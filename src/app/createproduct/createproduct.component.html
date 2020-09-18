@@ -1,0 +1,21 @@
+<div>
+    <h3 style="text-decoration: underline;">Add Product</h3>
+         
+            <table border="1px">
+
+                <tr>
+                        <td><input type="text" [(ngModel)]="product.name" placeholder="Enter product name"></td>
+                </tr>
+                <tr>
+                        <td><input type="text" [(ngModel)]="product.price" placeholder="Enter price"></td>
+                </tr>
+                <tr>
+                        <td><input type="text" [(ngModel)]="product.categoryId" placeholder="Enter categoryId"></td>
+                </tr>
+
+    </table>
+
+    <button (click)="createProduct()">Submit</button>
+    <span> {{ productlist() }} </span>
+
+</div>
